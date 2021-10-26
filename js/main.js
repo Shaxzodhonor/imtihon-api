@@ -32,7 +32,7 @@ function renderArray(array ,func){
 // CREATE USER CARDS FUNC=====================
 // ========================================
 function createUserCard(object){
-    let newLi = createElement({tagName: 'li', text: '', className: 'border border-1 rounded-3 p-3 bg-light shadow hover mb-2 js-user', node: elUserList});
+    let newLi = createElement({tagName: 'li', text: '', className: 'border border-1 rounded-3 p-3  shadow-sm hover mb-2 js-user', node: elUserList});
     let userTitle = createElement({tagName: 'div', className: "h4", text: object.name, node: newLi});
     let userName = createElement({tagName: 'div', text: "Username: " + object.username, node: newLi});
     let userEmail = createElement({tagName: 'div', text: "Email: " + object.email, node: newLi});
